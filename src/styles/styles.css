@@ -26,6 +26,19 @@ button:hover{
     color: #6FB95B;
     border: 2px solid #6FB95B;
 }
+.secondary{
+    background-color: none;
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.secondary img{
+    padding-left: 10px;
+}
+.secondary:hover img{
+    padding-left: 20px;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -94,4 +107,59 @@ nav div li ul:hover{
 .info{
     color: lightgray;
     transition-duration: 0.4s;
+}
+.folklore{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url("/img/foret.jpg");
+    background-size: cover;
+    padding: 10% 20%;
+}
+.folklore .info{
+    margin: 20px;
+    padding: 40px;
+    background-color: #2E2E2E;
+    width: 30rem;
+}
+.folklore .info p{
+    padding: 10px 0px;
+}
+
+
+.actualites{
+    margin: 5% 10%;
+}
+.listeactu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.galerie{
+    background-color: red;
+}
+.galerie .ligne{
+    display: flex;
+    align-content: stretch;
+}
+
+
+footer{
+    margin: 60px 60px 30px 60px;
+}
+footer .liens{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .liens li{
+    display: flex;
+}
+footer .liens li ul{
+    margin: 0px 10px;
+}
+footer .real{
+    display: flex;
+    justify-content: center;
+    color: #686565;
+    font-size: 14px;
 }
