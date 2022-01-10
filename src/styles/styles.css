@@ -5,7 +5,11 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Arial';
+    font-family: 'Raleway-Regular';
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 button{
     background-color: #6FB95B;
@@ -14,6 +18,7 @@ button{
     padding: 10px 50px;
     border-radius: 10px;
     font-size: 15px;
+    cursor: pointer;
     transition-duration: 0.4s;
 }
 button:hover{
@@ -46,7 +51,7 @@ nav div li ul:hover{
     background-color: #F0EFEF;
 }
 .heading{ 
-    background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url(img/heading.webp);
+    background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url("/img/heading.webp");
     background-size: cover;
     display: flex;
 }
@@ -62,12 +67,31 @@ nav div li ul:hover{
 .produits{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
 }
 .card{
     background-color: #FAFAFA;
     padding:30px;
-}
-.description{
+    width: 250px;
     display: flex;
-    
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+.card:hover{
+    background-color: #F0EFEF;
+}
+.card:hover .info{
+    color: black;
+}
+.card img{
+    margin: 20px;
+}
+.card .description{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    color: lightgray;
+    transition-duration: 0.4s;
 }
