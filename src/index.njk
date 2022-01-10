@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>La Chougle</title>
-    
-</head>
+    {% set title="lachougle.be" %}
+    {% include "./_includes/head.njk" %}
 <body>
     {% include "./_includes/nav.njk" %}
     <div class="heading">
@@ -17,13 +11,13 @@
             <a href="#"><button>Voir la boutique</button></a>
         </div>
         <div class="bouteilles">
-            <img src="img/bouteilles.png" alt="Les différents types de bière La Chougle">
+            <img src="/img/bouteilles.png" alt="Les différents types de bière La Chougle">
         </div>
     </div>
     <div class="produits">
         <a href="#">
             <div class="card">
-                <img src="img/25cl.png" alt="image la bière en 25cl">
+                <img src="/img/25cl.png" alt="image la bière en 25cl">
                 <div class="description">
                     <div>
                         <H3>La Chougle 33cl</H3>
@@ -35,7 +29,7 @@
         </a>
         <a href="#">
             <div class="card">
-                <img src="img/75cl.png" alt="image la bière en 25cl">
+                <img src="/img/75cl.png" alt="image la bière en 25cl">
                 <div class="description">
                     <div>
                         <H3>La Chougle 75cl</H3>
@@ -47,7 +41,7 @@
         </a>
         <a href="#">
             <div class="card">
-                <img src="img/25cl.png" alt="image la bière en 25cl">
+                <img src="/img/25cl.png" alt="image la bière en 25cl">
                 <div class="description">
                     <div>
                         <H3>La Chougle Triple 33cl</H3>
@@ -59,7 +53,7 @@
         </a>
         <a href="#">
             <div class="card">
-                <img src="img/decapsulleur.webp" alt="image la bière en 25cl">
+                <img src="/img/decapsulleur.webp" alt="image la bière en 25cl">
                 <div class="description">
                     <div>
                         <H3>Le décapsulleur</H3>
@@ -69,7 +63,7 @@
                 </div>
             </div> 
         </a>
-        <a href="#"><img src="img/fleche.svg" alt="flèche pour poursuivre vers la boutique"></a>
+        <a href="#"><img src="/img/fleche.svg" alt="flèche pour poursuivre vers la boutique"></a>
     </div>
 </body>
 </html>
