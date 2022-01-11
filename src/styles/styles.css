@@ -48,25 +48,28 @@ nav .logo{
     margin: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 nav .logo img{
     padding-right: 20px;
 }
-nav div li{
+nav ul{
     display: flex;
     align-items: center;
+    list-style: none;
 }
-nav div li ul{
+nav ul li{
     padding: 20px;
     transition-duration: 0.4s;
 }
-nav div li ul:hover{
+nav ul li:hover{
     background-color: #F0EFEF;
 }
 .heading{ 
     background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url("/img/heading.webp");
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
 }
 .heading .presentation{
     width: 20%;
@@ -80,12 +83,14 @@ nav div li ul:hover{
 .produits{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     margin: 5%;
 }
 .card{
     background-color: #FAFAFA;
     padding:30px;
+    margin-bottom: 20px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -110,6 +115,7 @@ nav div li ul:hover{
 }
 .folklore{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url("/img/foret.jpg");
     background-size: cover;
@@ -131,6 +137,7 @@ nav div li ul:hover{
 }
 .listeactu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .actualites .listeactu .actu img{
@@ -140,7 +147,6 @@ nav div li ul:hover{
 
 
 .galerie{
-    background-color: red; 
     width: 100%;
 }
 .galerie .ligne{
@@ -161,10 +167,11 @@ footer .liens{
     display: flex;
     justify-content: space-between;
 }
-footer .liens li{
+footer .liens ul{
     display: flex;
+    list-style: none;
 }
-footer .liens li ul{
+footer .liens ul li{
     margin: 0px 10px;
 }
 footer .real{
