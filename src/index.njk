@@ -3,40 +3,35 @@
     {% set title="lachougle.be" %}
     {% include "./_includes/head.njk" %}
 <body>
+    <!-- Navigation -->
     {% include "./_includes/nav.njk" %}
-    <div class="heading">
-        <div class="presentation">
-            <h1>La Chougle</h1>
-            <p>Bières brassée par des copintes pour des copintes, avec cette envie de partager de bons moments autour de bonnes bières arttisanales.</p>
-            <a href="#"><button>Voir la boutique</button></a>
-        </div>
-        <div class="bouteilles">
-            <img src="/img/bouteilles.png" alt="Les différents types de bière La Chougle">
-        </div>
-    </div>
+
+    <!-- Heading -->
+    {% include "./_includes/index/heading.njk" %}
+
     <!-- Liste des produits -->
-    {% include "./_includes/produits.njk" %}
+    {% include "./_includes/index/produits.njk" %}
 
     <!-- Folklore-->
-    {% include "./_includes/folklore.njk" %}
+    {% include "./_includes/index/folklore.njk" %}
 
     <!-- Evènements -->
     <!-- Event 1-->
-    {% set img1="https://via.placeholder.com/300x200" %}
+    {% set img1="https://via.placeholder.com/350x250" %}
     {% set h3_1="Marché de Amougies" %}
     {% set date1="25 janvier 2022" %}
     <!-- Event 2-->
-    {% set img2="https://via.placeholder.com/300x250" %}
+    {% set img2="https://via.placeholder.com/350x250" %}
     {% set h3_2="Dégustation de la chougle triple" %}
     {% set date2="12 février 2022" %}
     <!-- Event 3-->
-    {% set img3="https://via.placeholder.com/300x200" %}
+    {% set img3="https://via.placeholder.com/350x250" %}
     {% set h3_3="Pack cadeau à gagner" %}
     {% set date3="14 février 2022" %}
-    {% include "./_includes/event.njk" %}
+    {% include "./_includes/index/event.njk" %}
     
     <!-- galerie -->
-    {% include "./_includes/galerie.njk" %}
+    {% include "./_includes/index/galerie.njk" %}
 
     <!-- Footer -->
     {% include "./_includes/footer.njk" %}

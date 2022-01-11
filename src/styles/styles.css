@@ -137,10 +137,15 @@ nav div li ul:hover{
 
 .galerie{
     background-color: red;
+    
 }
 .galerie .ligne{
     display: flex;
-    align-content: stretch;
+    width: 100vw;
+  position: relative;
+}
+.galerie .ligne img{
+    width: 25vw; 
 }
 
 
