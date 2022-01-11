@@ -133,19 +133,24 @@ nav div li ul:hover{
     display: flex;
     justify-content: space-evenly;
 }
+.actualites .listeactu .actu img{
+    width: 350px;
+    height: 250px;
+}
 
 
 .galerie{
-    background-color: red;
-    
+    background-color: red; 
+    width: 100%;
 }
 .galerie .ligne{
     display: flex;
-    width: 100vw;
-  position: relative;
+    width: 100%;
 }
 .galerie .ligne img{
-    width: 25vw; 
+    width: 20%; 
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 
@@ -154,7 +159,7 @@ footer{
 }
 footer .liens{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 footer .liens li{
     display: flex;
@@ -164,6 +169,7 @@ footer .liens li ul{
 }
 footer .real{
     display: flex;
+    text-align: center;
     justify-content: center;
     color: #686565;
     font-size: 14px;
