@@ -1,0 +1,20 @@
+.container{
+    margin: 20px 20%;
+}
+.container img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.container p{
+    margin: 10px 0px;
+}
+h1{ 
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+h2{
+    margin: 10px 0px;
+    color: #6FB95B;
+}
