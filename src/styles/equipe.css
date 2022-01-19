@@ -9,12 +9,12 @@
 .container p{
     margin: 10px 0px;
 }
-h1{ 
+.container h1{ 
     text-align: center;
     margin-bottom: 20px;
     
 }
-h2{
-    margin: 10px 0px;
+.container h2{
+    margin: 30px 0px;
     color: #6FB95B;
 }

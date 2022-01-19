@@ -1,0 +1,17 @@
+.folklore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url("/img/foret.jpg");
+    background-size: cover;
+    padding: 10% 20%;
+}
+.folklore .info{
+    margin: 20px;
+    padding: 40px;
+    background-color: #2E2E2E;
+    width: 30rem;
+}
+.folklore .info p{
+    padding: 10px 0px;
+}

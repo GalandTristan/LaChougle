@@ -1,0 +1,33 @@
+.produits{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5%;
+}
+.card{
+    background-color: #FAFAFA;
+    padding:30px;
+    margin-bottom: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+.card:hover{
+    background-color: #F0EFEF;
+}
+.card:hover .info{
+    color: black;
+}
+.card img{
+    margin: 20px;
+}
+.card .description{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    color: lightgray;
+    transition-duration: 0.4s;
+}

@@ -1,0 +1,35 @@
+<html lang="fr">
+    {% set title="La Chougle Triple 33cl - lachougle.be" %}
+    {% include "./_includes/head.njk" %}
+    <link rel="stylesheet" href="/styles/article.css">
+<body>
+    <!-- Navigation -->
+    {% include "./_includes/nav.njk" %}
+
+    <!-- Fil d'Arianne-->
+    {% set nom="La Chougle Triple 33cl" %}
+    {% include "./_includes/fildarianne.njk" %}
+
+    <div class="contain">
+        <img src="/img/articles/33cl.png" alt="image de la bière">
+        <div class="informations">
+            <h1>La Chougle Triple 33cl</h1>
+            <h2>Description</h2>
+            <p>La Chougle est une bière blonde belge. Un savant mélange de houblon et d’épices qui lui confère des arômes d’agrumes (pamplemousse, citron vert et mandarine) et de fruits exotiques. Sa légère amertume lui apporte fraîcheur et caractère.</p>
+            <h2>Informations</h2>
+            <p>EBC : 11</p>
+            <p>IBU : 36</p>
+            <p>6,5%</p>
+        </div>
+        <div class="commande">
+            <h2>4,00€</h2>
+            <div class="quant"><p>Quantité :</p><input type="text" value="2"></div>
+            <p>Total : 8€</p>
+            <button>Ajouter au panier</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    {% include "./_includes/footer.njk" %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+.heading{ 
+    background: linear-gradient(0deg, rgba(62, 105, 50, 0.14), rgba(62, 105, 50, 0.14)), url("/img/heading.webp");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading .presentation{
+    width: 20%;
+    padding: 15% 20%;
+    color: white;
+    line-height: 132.9%;
+}
+.heading .presentation p{
+    margin: 30px 0px;
+}

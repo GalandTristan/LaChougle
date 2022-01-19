@@ -1,0 +1,39 @@
+h1{
+    text-align: left;
+}
+h2{
+    color: black;
+    text-align: left;
+    margin: 20px 0;
+}
+.filarianne{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.filarianne a{
+    color: #6FB95B;
+    padding: 0 5px;
+}
+.filarianne a img{
+    height: 25px;
+}
+.contain {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 10%;
+}
+.contain img{
+    height: 500px;
+}
+.contain .informations{
+    width: 30em;
+}
+.contain .commande .quant{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.contain .commande .quant input{
+    width: 100px;
+}

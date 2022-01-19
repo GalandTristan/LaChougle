@@ -1,0 +1,27 @@
+.actualites{
+    margin: 5% 10%;
+}
+.actualites h2{
+    text-align: center;
+    color: #6FB95B;
+    margin-bottom: 30px;
+}
+.listeactu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.actu .img{
+    display: inline-block;
+    overflow: hidden;  
+}
+.actualites .listeactu .actu img{
+    width: 350px;
+    height: 250px;
+}
+.actu:hover{
+    background-color: #e7e7e7;
+}
+.listeactu .actu .date{
+    padding: 20px;
+}

@@ -1,0 +1,12 @@
+.galerie{
+    width: 100%;
+}
+.galerie .ligne{
+    display: flex;
+    width: 100%;
+}
+.galerie .ligne img{
+    width: 20%; 
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
