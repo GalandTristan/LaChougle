@@ -25,13 +25,18 @@
         <div class="commande">
             <h2>7,00€</h2>
             
+            <div id="compteur">
+                <button id="minus">-</button>
+                <input type="text" name="value" id="value">
+                <button id="plus">+</button>
+            </div>
 
             <button id="add-to-basket">Ajouter au panier</button>
             <p>Nombre de bières dans le panier: <span id="chougle75cl">0</span> </p>
         </div>
     </div>
 
-    <script src="/js/app.js"></script>
+    <script src="/js/chougle75.js"></script>
 
     <!-- Footer -->
     {% include "./_includes/footer.njk" %}

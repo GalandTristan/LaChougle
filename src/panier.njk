@@ -8,9 +8,16 @@
 
     <h1>Votre panier</h1>
 
-    <p>Nombre de chougle 33cl : <span id="chougle33cl">0</span> </p>
-    <script src="/js/app.js"></script>
+    <p>Nombre de <a href="/lachougle33cl">chougle 33cl</a> : <span id="chougle33cl">0</span> </p>
+    <p>Nombre de <a href="/lachougle75cl">chougle 75cl</a> : <span id="chougle75cl">0</span> </p>
     
+
+    <script src="/js/chougle33.js"></script>
+    <script src="/js/chougle75.js"></script>
+    <script>
+        let beersInBasket = localStorage.getItem("chougle75cl") ? parseInt(localStorage.getItem("chougle75cl")) : 0
+    </script>
+
     <!-- Footer -->
     {% include "./_includes/footer.njk" %}
 </body>
