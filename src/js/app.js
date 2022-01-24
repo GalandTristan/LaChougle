@@ -1,37 +1,32 @@
-const actions = Array.from(document.querySelectorAll('[data-action]'));
+let bieres = 0
+        let beersInBasket = localStorage.getItem("chougle33cl") ? parseInt(localStorage.getItem("chougle33cl")) : 0
 
-let counter = localStorage.getItem("counter") || 0;
+        const boutonMoins = document.querySelector("#minus")
+        const boutonPlus = document.querySelector("#plus")
+        const inputVal = document.querySelector("input")
+        const addToBasket = document.querySelector("#add-to-basket")
+        const displayBeers = document.querySelector("#chougle33cl")
 
-document.querySelector(".counter-value").innerText = counter;
+        displayBeers.textContent = beersInBasket
+        inputVal.value = bieres
 
-actions.forEach(action => {
-	action.addEventListener('click', () => {
-		const action_name = action.dataset.action;
+        const changeBeersQuantity = (quantity) => {
+            bieres += quantity
+            inputVal.value = bieres
+        }
 
-		action.classList.add("animate");
+        boutonMoins.addEventListener("click", () => {
+            if (bieres >= 1) {
+                changeBeersQuantity(-1)
+            }
+        })
+        boutonPlus.addEventListener("click", () => {
+            changeBeersQuantity(1)
+        })
 
-		setTimeout(() => {
-			action.classList.remove("animate");
-		}, 1000);
+        addToBasket.addEventListener("click", () => {
+            beersInBasket += bieres
+            localStorage.setItem("chougle33cl", beersInBasket)
+            displayBeers.textContent = beersInBasket
 
-		switch (action_name) {
-			case 'increase':
-				counter++;
-				break;
-			case 'decrease':
-				counter--;
-				break;
-			case 'reset':
-				counter = 0;
-				break;
-			case 'save':
-				localStorage.setItem("counter", counter);
-				break;
-			case 'clear-save':
-				localStorage.removeItem("counter");
-				break;
-		}
-
-		document.querySelector(".counter-value").innerText = counter;
-	});
-});
+        })

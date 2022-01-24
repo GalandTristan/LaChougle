@@ -24,30 +24,20 @@
         <div class="commande">
             <h2>3,00€</h2>
             
-            <button data-action="decrease">
-                <span>-</span>
-            </button>
-            <div class="quant counter-value"><p>Quantité :</p><input type="text" value="1"></div>
-            <button data-action="increase">
-                <span>+</span>
-            </button>
-            <button id="ajoute-chougle-33cl" data-action="save">Ajouter au panier</button>
-            <p>Total de bière : </p>
-        </div>
-    </div>
-    <div class="counter">
-        <div class="counter-value">0</div>
+            <div id="compteur">
+                <button id="minus">-</button>
+                <input type="text" name="value" id="value">
+                <button id="plus">+</button>
+            </div>
 
-        <div class="counter-controls">
+            <button id="add-to-basket">Ajouter au panier</button>
+            <p>Nombre de bières dans le panier: <span id="chougle33cl">0</span> </p>
             
         </div>
     </div>
         
-    </div>
     <script src="/js/app.js"></script>
-    <script>
-        
-    </script>
+
     <!-- Footer -->
     {% include "./_includes/footer.njk" %}
 </body>
