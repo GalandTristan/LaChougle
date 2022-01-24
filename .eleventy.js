@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
         "./src/styles": "./styles",
         "./src/img": "./img",
         "./src/favicon.ico": "./favicon.ico",
+        "./src/js": "./js",
     });
     return {
         dir: {
