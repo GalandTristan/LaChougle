@@ -1,0 +1,85 @@
+---
+pagination:
+    data: articles
+    size: 1
+    alias: article
+permalink: "articles/{{ article.name | slug }}/"
+---
+<html lang="fr">
+    {% set title="La Chougle 33cl - lachougle.be" %}
+    {% include "./_includes/head.njk" %}
+    <link rel="stylesheet" href="/styles/article.css">
+<body>
+    <!-- Navigation -->
+    {% include "./_includes/nav.njk" %}
+
+    <!-- Fil d'Arianne-->
+    {% include "./_includes/fildarianne.njk" %}  
+
+    <!-- Contenu -->
+    <div class="contain">
+        <img src="{{ article.img }}" alt="image de la bière">
+        <div class="informations">
+            <h1>{{ article.name }}</h1>
+            <h2>Description</h2>
+            <p>{{ article.description }}</p>
+            <h2>Informations</h2>
+            <p>EBC : {{ article.ebc }}</p>
+            <p>IBU : {{ article.ibu }}</p>
+            <p>{{ article.deg }}</p>
+        </div>
+        <div class="commande">
+            <h2>{{ article.price }}</h2>
+            
+            <div id="compteur">
+                <button id="minus">-</button>
+                <input type="text" name="value" id="value">
+                <button id="plus">+</button>
+            </div>
+
+            <button id="add-to-basket">Ajouter au panier</button>
+            <p>Nombre de bières dans le panier: <span id="{{ article.id }}">0</span> </p>
+            
+        </div>
+    </div>
+        
+    
+    <script>
+        let bieres = 0
+        let beersInBasket = localStorage.getItem("{{ article.id }}") ? parseInt(localStorage.getItem("{{ article.id }}")) : 0
+
+        const boutonMoins = document.querySelector("#minus")
+        const boutonPlus = document.querySelector("#plus")
+        const inputVal = document.querySelector("input")
+        const addToBasket = document.querySelector("#add-to-basket")
+        const displayBeers = document.querySelector("#{{ article.id }}")
+
+        displayBeers.textContent = beersInBasket
+        inputVal.value = bieres
+
+        const changeBeersQuantity = (quantity) => {
+            bieres += quantity
+            inputVal.value = bieres
+        }
+
+        boutonMoins.addEventListener("click", () => {
+            if (bieres >= 1) {
+                changeBeersQuantity(-1)
+            }
+        })
+        boutonPlus.addEventListener("click", () => {
+            changeBeersQuantity(1)
+        })
+
+        addToBasket.addEventListener("click", () => {
+            beersInBasket += bieres
+            localStorage.setItem("{{ article.id }}", beersInBasket)
+            displayBeers.textContent = beersInBasket
+
+        })
+    </script>
+
+    <!-- Footer -->
+    {% include "./_includes/footer.njk" %}
+</body>
+</html>

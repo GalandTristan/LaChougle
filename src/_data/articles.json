@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Chougle 33cl",
+        "price": "3€",
+        "description": "La Chougle est une bière blonde belge. Un savant mélange de houblon et d’épices qui lui confère des arômes d’agrumes (pamplemousse, citron vert et mandarine) et de fruits exotiques. Sa légère amertume lui apporte fraîcheur et caractère.",
+        "ebc": "11",
+        "ibu": "36",
+        "deg": "6,5",
+        "id": "chougle33cl",
+        "img": "/img/articles/33cl.png",
+        "jsScript": "/js/chougle33.js"
+
+    },
+    {
+        "name": "Chougle 75cl",
+        "price": "7€",
+        "description": "La Chougle est une bière blonde belge. Un savant mélange de houblon et d’épices qui lui confère des arômes d’agrumes (pamplemousse, citron vert et mandarine) et de fruits exotiques. Sa légère amertume lui apporte fraîcheur et caractère.",
+        "ebc": "11",
+        "ibu": "36",
+        "deg": "6,5",
+        "id": "chougle75cl",
+        "img": "/img/articles/75cl.png",
+        "jsScript": "/js/chougle75.js"
+    },
+    {
+        "name": "Chougle Triple 33cl",
+        "price": "4€",
+        "description": "La Chougle est une bière blonde belge. Un savant mélange de houblon et d’épices qui lui confère des arômes d’agrumes (pamplemousse, citron vert et mandarine) et de fruits exotiques. Sa légère amertume lui apporte fraîcheur et caractère.",
+        "ebc": "11",
+        "ibu": "36",
+        "deg": "10,5",
+        "id": "chougletriple33cl",
+        "img": "/img/articles/75cl.png"
+    },
+    {
+        "name": "Décapsulleur",
+        "price": "4€",
+        "description": "Le décapsulleur officiel pour ouvrir vos chougles !",
+        
+        "id": "decapsulleur",
+        "img": "/img/articles/decapsulleur.webp"
+    },
+    {
+        "name": "T-shirt Chougle",
+        "price": "20€",
+        "description": "Pour soutenir notre projet, nous avons fait réalisé nos propres t-shirt",
+        "id": "tshirt",
+        "img": "/img/articles/tshirt.webp"
+    }
+]

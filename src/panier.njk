@@ -9,13 +9,14 @@
     <h1>Votre panier</h1>
 
     <p>Nombre de <a href="/lachougle33cl">chougle 33cl</a> : <span id="chougle33cl">0</span> </p>
+    <button>-1</button>
     <p>Nombre de <a href="/lachougle75cl">chougle 75cl</a> : <span id="chougle75cl">0</span> </p>
     
-
-    <script src="/js/chougle33.js"></script>
-    <script src="/js/chougle75.js"></script>
     <script>
-        let beersInBasket = localStorage.getItem("chougle75cl") ? parseInt(localStorage.getItem("chougle75cl")) : 0
+        const small = document.querySelector("#chougle33cl")
+        const big = document.querySelector("#chougle75cl")
+        big.textContent = localStorage.getItem("chougle75cl") ? parseInt(localStorage.getItem("chougle75cl")) : 0
+        small.textContent = localStorage.getItem("chougle33cl") ? parseInt(localStorage.getItem("chougle33cl")) : 0
     </script>
 
     <!-- Footer -->
